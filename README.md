@@ -41,7 +41,7 @@
   <h1 id="gameOverMessage">Oyun Bitti!</h1>
   <h2 id="scoreDisplay"></h2>
   <input type="text" id="nicknameInput" placeholder="Nickname">
-  <button id="startButton">Start</button>
+  <button id="startButton">Oyuna Başla</button>
   <button id="restartButton" style="display: none;">Tekrar Oyna</button>
   <div>
     <label for="difficultyRange">Zorluk Seviyesi: </label>
@@ -269,7 +269,7 @@
     topPlayersList.innerHTML = "";
     topPlayers.forEach((player, index) => {
       const listItem = document.createElement("li");
-      listItem.textContent = `${index + 1}. ${player.name}: ${player.score}`;
+      listItem.textContent = `${player.name}: ${player.score}`;
       topPlayersList.appendChild(listItem);
     });
   }
